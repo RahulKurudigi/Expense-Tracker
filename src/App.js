@@ -36,13 +36,6 @@ const App = () => {
     console.log(data);
   };
 
-  // return React.createElement(
-  //   'div',
-  //   {},
-  //   React.createElement('h2', {}, "Let's get started!"),
-  //   React.createElement(Expenses, { items: expenses })
-  // );
-
   return (
     <div>
       <NewExpense onAddExpense={addExpenseHandler} />
@@ -52,23 +45,3 @@ const App = () => {
 };
 
 export default App;
-
-//***************************************** */
-
-// import React from "react";
-// import Counter from "./Counter";
-
-// const App = () => {
-//   const [show, setShow] = useState(false);
-//   const changeShow = () => {
-//     setShow(!show);
-//   };
-//   return (
-//     <div>
-//       <button onClick={changeShow}> Toggle</button>
-//       {show && <Counter />}
-//     </div>
-//   );
-// };
-
-// export default App;
